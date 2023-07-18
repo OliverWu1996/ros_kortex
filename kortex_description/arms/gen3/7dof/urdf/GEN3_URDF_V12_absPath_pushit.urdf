@@ -8,7 +8,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/base_link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -17,7 +17,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/base_link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -30,7 +30,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/Shoulder_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/Shoulder_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -39,16 +39,16 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/Shoulder_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/Shoulder_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint name="Actuator1" type="continuous">
+  <joint name="Actuator1" type="revolute">
     <origin xyz="0 0 0.15643" rpy="3.1416 2.7629E-18 -4.9305E-36" />
     <parent link="base_link" />
     <child link="Shoulder_Link" />
     <axis xyz="0 0 1" />
-    <limit effort="39" velocity="0.8727" />
+    <limit lower="-6.28" upper="6.28" effort="39" velocity="0.8727" />
   </joint>
   <link name="HalfArm1_Link">
     <inertial>
@@ -59,7 +59,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/HalfArm1_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/HalfArm1_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -68,7 +68,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/HalfArm1_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/HalfArm1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -88,7 +88,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/HalfArm2_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/HalfArm2_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -97,16 +97,16 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/HalfArm2_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/HalfArm2_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint name="Actuator3" type="continuous">
+  <joint name="Actuator3" type="revolute">
     <origin xyz="0 -0.21038 -0.006375" rpy="-1.5708 1.2326E-32 -2.9122E-16" />
     <parent link="HalfArm1_Link" />
     <child link="HalfArm2_Link" />
     <axis xyz="0 0 1" />
-    <limit effort="39" velocity="0.8727" />
+    <limit lower="-6.28" upper="6.28" effort="39" velocity="0.8727" />
   </joint>
   <link name="ForeArm_Link">
     <inertial>
@@ -117,7 +117,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/ForeArm_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/ForeArm_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -126,7 +126,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/ForeArm_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/ForeArm_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -154,7 +154,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/SphericalWrist1_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/SphericalWrist1_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -163,16 +163,16 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/SphericalWrist1_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/SphericalWrist1_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint name="Actuator5" type="continuous">
+  <joint name="Actuator5" type="revolute">
     <origin xyz="0 -0.20843 -0.006375" rpy="-1.5708 2.2204E-16 -6.373E-17" />
     <parent link="ForeArm_Link" />
     <child link="SphericalWrist1_Link" />
     <axis xyz="0 0 1" />
-    <limit effort="9" velocity="0.8727" />
+    <limit lower="-6.28" upper="6.28" effort="9" velocity="0.8727" />
   </joint>
   <link name="SphericalWrist2_Link">
     <inertial>
@@ -183,7 +183,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/SphericalWrist2_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/SphericalWrist2_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -192,7 +192,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/SphericalWrist2_Link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/SphericalWrist2_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -212,7 +212,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/Bracelet_with_vision_link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/Bracelet_with_vision_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -221,16 +221,16 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/Bracelet_with_vision_link.STL" />
+        <mesh filename="/home/y/Documents/WYY_META/effectit/ros_kortex/kortex_description/arms/gen3/7dof/meshes/Bracelet_with_vision_link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint name="Actuator7" type="continuous">
+  <joint name="Actuator7" type="revolute">
     <origin xyz="0 -0.10593 -0.00017505" rpy="-1.5708 -5.5511E-17 9.6396E-17" />
     <parent link="SphericalWrist2_Link" />
     <child link="Bracelet_Link" />
     <axis xyz="0 0 1" />
-    <limit effort="9" velocity="0.8727" />
+    <limit lower="-6.28" upper="6.28" effort="9" velocity="0.8727" />
   </joint>
   <link name="EndEffector_Link" />
   <joint name="EndEffector" type="fixed">
